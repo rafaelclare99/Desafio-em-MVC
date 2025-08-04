@@ -1,0 +1,9 @@
+@model ProgramaMVC_6_ErroRenderizacaoView.Models.Produto
+
+@{ ViewData["Title"] = "Detalhes do Produto"; }
+
+<h1>Detalhes do Produto</h1>
+
+<p>Nome: @Model.Nome</p> @* Bug: Model pode ser nulo aqui *
+<p>Preço: @Model.Preco</p>
+
